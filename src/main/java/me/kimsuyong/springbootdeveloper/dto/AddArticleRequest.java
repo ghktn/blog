@@ -8,7 +8,7 @@ import me.kimsuyong.springbootdeveloper.domain.Article;
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
-public class AddAriticleRequest {
+public class AddArticleRequest {
     private String title;
     private String content;
 

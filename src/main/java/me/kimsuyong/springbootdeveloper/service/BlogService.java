@@ -3,7 +3,7 @@ package me.kimsuyong.springbootdeveloper.service;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import me.kimsuyong.springbootdeveloper.domain.Article;
-import me.kimsuyong.springbootdeveloper.dto.AddAriticleRequest;
+import me.kimsuyong.springbootdeveloper.dto.AddArticleRequest;
 import me.kimsuyong.springbootdeveloper.dto.UpdateArticleRequest;
 import me.kimsuyong.springbootdeveloper.repository.BlogRepository;
 import org.springframework.stereotype.Service;
@@ -18,7 +18,7 @@ public class BlogService {
     private final BlogRepository blogRepository;
 
     // 블로그 글 추가 메서드
-    public Article save(AddAriticleRequest request) {
+    public Article save(AddArticleRequest request) {
         return blogRepository.save(request.toEntity());
     }
 
